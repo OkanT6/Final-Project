@@ -1,0 +1,4 @@
+Here's ER diagrams of database model. This design has a really crucial role of the application. Because we have to satisfy project scenario.
+1-1 means one-to-one relationship
+1-n means one-to-many relationship
+n-n means many-to-many relationship
