@@ -8,7 +8,7 @@ Below are the ER diagrams of the database model. This design is essential to the
 n-n means many-to-many relationship
 
 
-# Entity's Name Meanings
+# Entities' Name Meanings
 I used Turkish Names for the entities so let me translate them into English.
 Kullanıcı means "User"
 Kullanıcılar means "Users"
