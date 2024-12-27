@@ -8,3 +8,17 @@ Below are the ER diagrams of the database model. This design is essential to the
 n-n means many-to-many relationship
 
 
+# Entity's Name Meanings
+I used Turkish Names for the entities so let me translate them into English.
+Kullanıcı means "User"
+Kullanıcılar means "Users"
+KullancıDetayı means "KullanıcıDetail"
+KullanıcıDetayları means "KullanıcıDetails"
+Tesis means "Facilty"
+Tesisler means "Facilities"
+Salon means "Venue"
+Salonlar means "Venues"
+Branş means "Sport Dicipline"
+Branşlar means "Sport Diciplines"
+Seans means "Sesion"
+Seanslar means "Sesions"
