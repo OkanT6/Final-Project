@@ -24,3 +24,6 @@ Seans means "Sesion"
 Seanslar means "Sesions"
 
 "TC" property means "Turkish Repoblic Identity Number". It's primary and unique number. It has to have 11 digits.
+
+
+Reminder: In the future, my project partner going to consume the API with a flutter mobile application.
