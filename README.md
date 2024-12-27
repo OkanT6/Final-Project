@@ -22,3 +22,5 @@ Branş means "Sport Dicipline"
 Branşlar means "Sport Diciplines"
 Seans means "Sesion"
 Seanslar means "Sesions"
+
+"TC" property means "Turkish Repoblic Identity Number". It's primary and unique number. It has to have 11 digits.
