@@ -1,0 +1,359 @@
+[
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131Controller",
+    "Method": "CreateUser",
+    "RelativePath": "api/Kullan\u0131c\u0131/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullan\u0131c\u0131DTO",
+        "Type": "EruKampusSpor.DTOs.Kullan\u0131c\u0131DTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131Controller",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Kullan\u0131c\u0131/DeleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131Controller",
+    "Method": "GetAllUser",
+    "RelativePath": "api/Kullan\u0131c\u0131/GetAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131Controller",
+    "Method": "GetKullan\u0131c\u0131ById",
+    "RelativePath": "api/Kullan\u0131c\u0131/GetKullan\u0131c\u0131ById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131Controller",
+    "Method": "Login",
+    "RelativePath": "api/Kullan\u0131c\u0131/Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Tc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131Controller",
+    "Method": "Register",
+    "RelativePath": "api/Kullan\u0131c\u0131/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TC",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131DetayController",
+    "Method": "GetAllKullan\u0131c\u0131Detaylar\u0131",
+    "RelativePath": "api/Kullan\u0131c\u0131Detay/GetAllKullan\u0131c\u0131Detaylar\u0131",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131DetayController",
+    "Method": "GetKullan\u0131c\u0131Detay",
+    "RelativePath": "api/Kullan\u0131c\u0131Detay/GetKullan\u0131c\u0131Detay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.Kullan\u0131c\u0131DetayController",
+    "Method": "UpdateKullan\u0131c\u0131Detay",
+    "RelativePath": "api/Kullan\u0131c\u0131Detay/UpdateKullan\u0131c\u0131Detay",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "yeniKullan\u0131c\u0131Detay",
+        "Type": "EruKampusSpor.Models.Kullan\u0131c\u0131Detay",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.RezervasyonController",
+    "Method": "GetAllRezervasyonlar",
+    "RelativePath": "api/Rezervasyon/GetAllRezervasyonlar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.RezervasyonController",
+    "Method": "IptalEdilebilirMi",
+    "RelativePath": "api/Rezervasyon/IptalEdilebilirMi",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seans",
+        "Type": "EruKampusSpor.Models.Seans",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.RezervasyonController",
+    "Method": "RezervasyonIptal",
+    "RelativePath": "api/Rezervasyon/RezervasyonIptal",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Kullan\u0131c\u0131Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SeansId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.RezervasyonController",
+    "Method": "rezervasyonYap",
+    "RelativePath": "api/Rezervasyon/rezervasyonYap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Kullan\u0131c\u0131Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SeansId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SalonController",
+    "Method": "GetSalonById",
+    "RelativePath": "api/Salon/GetSalonById/salonlar/{salonId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salonId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SalonController",
+    "Method": "GetSalonlar",
+    "RelativePath": "api/Salon/GetSalonlar/api/tesisler/{tesisId}/salonlar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tesisId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SalonController",
+    "Method": "PostSalon",
+    "RelativePath": "api/Salon/PostSalon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salonDTO",
+        "Type": "EruKampusSpor.DTOs.SalonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SalonBransController",
+    "Method": "AddSalonBrans",
+    "RelativePath": "api/SalonBrans/AddSalonBrans/api/salon-brans",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salonBransDTO",
+        "Type": "EruKampusSpor.DTOs.SalonBransDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SalonBransController",
+    "Method": "GetBranslarBySalon",
+    "RelativePath": "api/SalonBrans/GetBranslarBySalon/{salonId}/branslar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salonId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SeansController",
+    "Method": "GetSeanslar",
+    "RelativePath": "api/Seans/GetSeanslar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EruKampusSpor.DTOs.SeansDTO, EruKampusSpor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.SeansController",
+    "Method": "seansEkle",
+    "RelativePath": "api/Seans/seansEkle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Yeniseans",
+        "Type": "EruKampusSpor.DTOs.SeansDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.TesisController",
+    "Method": "AddTesis",
+    "RelativePath": "api/Tesis/AddTesis/api/tesisler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tesis",
+        "Type": "EruKampusSpor.Models.Tesis",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EruKampusSpor.Controllers.TesisController",
+    "Method": "GetTesisler",
+    "RelativePath": "api/Tesis/GetTesisler/api/tesisler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

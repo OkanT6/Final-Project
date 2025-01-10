@@ -1,0 +1,668 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "EruKampusSpor",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Kullanıcı/GetKullanıcıById": {
+      "get": {
+        "tags": [
+          "Kullanıcı"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Kullanıcı/GetAllUser": {
+      "get": {
+        "tags": [
+          "Kullanıcı"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Kullanıcı/CreateUser": {
+      "post": {
+        "tags": [
+          "Kullanıcı"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KullanıcıDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KullanıcıDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/KullanıcıDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Kullanıcı/DeleteUser": {
+      "delete": {
+        "tags": [
+          "Kullanıcı"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Kullanıcı/Login": {
+      "get": {
+        "tags": [
+          "Kullanıcı"
+        ],
+        "parameters": [
+          {
+            "name": "Tc",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Kullanıcı/Register": {
+      "post": {
+        "tags": [
+          "Kullanıcı"
+        ],
+        "parameters": [
+          {
+            "name": "TC",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KullanıcıDetay/UpdateKullanıcıDetay": {
+      "put": {
+        "tags": [
+          "KullanıcıDetay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KullanıcıDetay"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KullanıcıDetay"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/KullanıcıDetay"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KullanıcıDetay/GetKullanıcıDetay": {
+      "get": {
+        "tags": [
+          "KullanıcıDetay"
+        ],
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KullanıcıDetay/GetAllKullanıcıDetayları": {
+      "get": {
+        "tags": [
+          "KullanıcıDetay"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rezervasyon/GetAllRezervasyonlar": {
+      "get": {
+        "tags": [
+          "Rezervasyon"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rezervasyon/rezervasyonYap": {
+      "post": {
+        "tags": [
+          "Rezervasyon"
+        ],
+        "parameters": [
+          {
+            "name": "KullanıcıId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SeansId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salon/GetSalonlar/api/tesisler/{tesisId}/salonlar": {
+      "get": {
+        "tags": [
+          "Salon"
+        ],
+        "parameters": [
+          {
+            "name": "tesisId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salon/GetSalonById/salonlar/{salonId}": {
+      "get": {
+        "tags": [
+          "Salon"
+        ],
+        "parameters": [
+          {
+            "name": "salonId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salon/PostSalon": {
+      "post": {
+        "tags": [
+          "Salon"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalonDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalonDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalonDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SalonBrans/GetBranslarBySalon/{salonId}/branslar": {
+      "get": {
+        "tags": [
+          "SalonBrans"
+        ],
+        "parameters": [
+          {
+            "name": "salonId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SalonBrans/AddSalonBrans/api/salon-brans": {
+      "post": {
+        "tags": [
+          "SalonBrans"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalonBransDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalonBransDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalonBransDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Seans/GetSeanslar": {
+      "get": {
+        "tags": [
+          "Seans"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SeansDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SeansDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SeansDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Seans/seansEkle": {
+      "post": {
+        "tags": [
+          "Seans"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SeansDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SeansDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SeansDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tesis/GetTesisler/api/tesisler": {
+      "get": {
+        "tags": [
+          "Tesis"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tesis/AddTesis/api/tesisler": {
+      "post": {
+        "tags": [
+          "Tesis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tesis"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tesis"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tesis"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cinsiyet": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "KullanıcıDTO": {
+        "type": "object",
+        "properties": {
+          "kullanıcıId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tc": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "cinsiyet": {
+            "$ref": "#/components/schemas/Cinsiyet"
+          }
+        },
+        "additionalProperties": false
+      },
+      "KullanıcıDetay": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adres": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefon": {
+            "type": "string",
+            "nullable": true
+          },
+          "eMail": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "cinsiyet": {
+            "$ref": "#/components/schemas/Cinsiyet"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SalonBransDTO": {
+        "required": [
+          "bransId",
+          "salonId"
+        ],
+        "type": "object",
+        "properties": {
+          "salonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bransId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SalonDTO": {
+        "type": "object",
+        "properties": {
+          "salonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "salonaAdı": {
+            "type": "string",
+            "nullable": true
+          },
+          "tesisId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SeansCinsiyet": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SeansDTO": {
+        "type": "object",
+        "properties": {
+          "tesisId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "salonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bransId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "seansSaati": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "tarih": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "kontenjan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dolu": {
+            "type": "boolean"
+          },
+          "seansCinsiyet": {
+            "$ref": "#/components/schemas/SeansCinsiyet"
+          },
+          "rezerveEdenKisiSayisi": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tesis": {
+        "type": "object",
+        "properties": {
+          "tesisId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tesisAdı": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
